@@ -65,7 +65,11 @@ resultElement.innerHTML = lookUpProfile("Akira", "likes");
 
 //====================================================================
 function convertToInteger(str) {
+    if(/[^01]/.test(str)) {
+        return NaN;
+    } else {
     return parseInt(str, 2);
+    }
 }
 function convertToDecimal() {
     const binaryInput = document.getElementById("binary").value;
