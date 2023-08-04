@@ -22,3 +22,37 @@ examples of mixing quotes:
 let innerHtml="<p>Click here to <a href=\"#Home\">return home</a></p>";
 console.log(innerHtml);
 
+///////////////// Catch Use of Assignment Operator Instead of Equality Operator /////////
+Branching programs, i.e. ones that do different things if certain conditions are met, rely on if, else if,and else statements in JavaScript...
+Fix the condition so the program runs the right branch, and the appropriate value is assigned to result.
+let x=7;
+let y=9;
+let result = "to come"!;
+if(x==y){
+	result="Equal!";
+} else {
+	result="Not Equal!";
+}
+console.log(result);
+//////////////// Catch Missing Open and Closing Parenthesis After a Function Call ////////
+When a function or method doesn't take any arguments, you may forget to include the (empty) opening and closing parentheses when calling it......
+Fix the code so the variable result is set to the value returned from calling the function getNine.
+function getNine() {
+	let x=6;
+	let y=3;
+	return x+y;
+}
+let result=getNine();
+console.log(result);
+
+////////////// Catch Arguments Passed in the Wrong Order When Calling a Function /////////
+Continuing the discussion on calling functions, the next bug to watch out for is when a function's arguments are supplied in the incorrect order............
+The function raiseToPower raises a baise to an exponent. Unfortunately, it's not called properly - fix the code so the value of power is the expected 8.
+function raiseToPower(b,e){
+	return Math.pow(b,e);
+}
+let base =2;
+let exp=3;
+let power=raiseToPower(base,exp);
+console.log(power);
+

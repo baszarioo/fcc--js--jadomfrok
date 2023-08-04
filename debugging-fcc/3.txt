@@ -1,0 +1,35 @@
+/////////////////// Catch Off by One Errors When Using Indexing///////////////////////////
+Off by one errors (sometimes called OBOE) corp up when you're trying to target a specific index of a string or array (to slicee or access a segment), or when looping over the indices of them.
+Fix the two indexing errors in the following function so all the numbers 1 through 5 are printed to the console.
+function countToFive() {
+	let firstFive="12345";
+	let len=firstFive.length;
+	for(let i=0; i<len; i++){
+		console.log(firstFive[i]);
+	}
+}
+countToFive();
+
+///////////////////// Use Caution When Reinitializing Variables Inside a Loop ///////////
+Sometimes it's necessary to save information, increment counters, or re-set Variables within a loop................
+The following function is supposed to create a two-dimensional array with m rows and n columns of zeroes. Unfortunately, it's not producing the expected output because the row variable isn't being reinitialized (set back to an empty array) in the outer loop. Fix the code so it returs a correct 3x2 array of zeroes, which looks like [[0, 0]. [0, 0], [0, 0]].
+function zeroArray(m,n) {
+	let newArray=[];
+	let row=[];
+	for(let i=0; i<m; i++){
+		// Adds the m-th row into newArray.
+		// newArray.push(0);
+		// newArray.push(row);
+		// newArray.push(row[]);
+		let row=[];
+	for(let j=0; j<n; j++){
+		row.push(0);
+	}
+	return newArray;
+}
+let matrix=zeroArray(3, 2);
+console.log(matrix);
+
+/////////////////// Prevent Infinite Loops with a Valid Terminal Condition //////////////
+The final topic is the dreaded infinite loop. Loops are great tools when you need your progra to run a code block a certain number of times or until a condition is met, but they need a terminal condition that ends the looping.....................
+The myFunc() function contains an infinite loop because the terminal condiiton i!=4 will never evaluate to false (and break the looping) - i will increment by 2 each pass, and jump right over 4 since i is odd to start
