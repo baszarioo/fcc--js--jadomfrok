@@ -1,0 +1,28 @@
+----------------------------------- Basic Data Structures --------------------------------
+Data can be stored and accessed in many ways. You already know some common JavScript data structures - arrays and objects.
+In this Basic Data Structures course, you'll learn more about the differences between arrays and objects, and which to use in different siutations. You'll also learn how to use helpful JS methods like splice() and Object.keys() to access and manipulate data.
+
+////////////////////////////// Use an Array to Store a Collection of Data ///////////////
+The below is an example of the simplest implementation of an array data structure. This is known as a one-dimensional array, meaning it only has one level, or that it does not have any other arrays nested within it. Notice ...................
+We have defined a variable called yourArray. Complete the statement by assigning an array of at least 5 elements in length to the yourArray variable. your array should contain at least one string, pne number, and one boolean.
+let yourArray=['one', true, 2, 3, 1]
+
+/////////////////// Access an Array's Contents Using Bracket Notation ///////////////////
+The fundamental feature of any data structure is, of course, the ability to not oonly store data, but to be able to retrieve that data on command. .................
+In order to complete this challenge, set the 2nd position (index 1) of myArray to anything you want, besides the letter b.
+let myArray=["a","b","c","d"];
+myArray[1]="notb";
+console.log(myArray);
+
+////////////////////// Add Items to an Array with push() and unshift() //////////////////
+An array's length, like the data types it can contain, is not fixed. Arrays can be defined with a length of any number of elements, and elements can be added or removed over time; in other words, arrays are mutable. In this challenge, we will look at two methods with which we can programmatically modify an array: Array.push() and Array.unshift().
+Both methods take one or more elements as parameters and add those elements to the array the method is being called on; the push() method adds elements to the end of an array, and unshift() adds elements to the beginning. Consider ............................
+- We have defined a function, mixedNumber which we are passing an array as an argument. Modify the function by using push() and unshift() to add 'I', 2, 'three' to the beginning of the array and 7, 'VIII', 9 to the end so that the reurned array conatins represntations of the number 1-9 in order.
+function mixedNUmbers(arr) {
+	arr.unshift('I', 2, 'three');
+	arr.push(7, 'VIII', 9);
+	return arr;
+}
+console.log(mixedNumbers(['IV', 5, 'six']));
+
+///////////////////////// Remove Items from an Array with pop() and shift() //////////////
