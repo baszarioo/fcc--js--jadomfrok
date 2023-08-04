@@ -32,4 +32,10 @@ console.log(matrix);
 
 /////////////////// Prevent Infinite Loops with a Valid Terminal Condition //////////////
 The final topic is the dreaded infinite loop. Loops are great tools when you need your progra to run a code block a certain number of times or until a condition is met, but they need a terminal condition that ends the looping.....................
-The myFunc() function contains an infinite loop because the terminal condiiton i!=4 will never evaluate to false (and break the looping) - i will increment by 2 each pass, and jump right over 4 since i is odd to start
+The myFunc() function contains an infinite loop because the terminal condiiton i!=4 will never evaluate to false (and break the looping) - i will increment by 2 each pass, and jump right over 4 since i is odd to start. Fix the comparison operator in the terminal condition so the loop only runs for i less then or equal to 4.
+function myFunc() {
+	for(let i=1; i<=4; i+=2){
+		console.log("Still going!");
+	}
+}
+////////////
