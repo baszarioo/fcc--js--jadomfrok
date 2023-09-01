@@ -5,6 +5,9 @@ functions:
 strings:
 operators:
 
+augmented operations [++,--,*=,...]
+let vs var:
+
 function timesFive(p){
  return p*5;
 }
