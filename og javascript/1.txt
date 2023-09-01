@@ -1,2 +1,11 @@
 comment
 var
+
+functions:
+strings:
+operators:
+
+function timesFive(p){
+ return p*5;
+}
+timesFive(3); =========> returns 15
