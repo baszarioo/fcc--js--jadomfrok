@@ -7,6 +7,7 @@ operators:
 
 augmented operations [++,--,*=,...]
 let vs var:
+string.length; 
 
 function timesFive(p){
  return p*5;
