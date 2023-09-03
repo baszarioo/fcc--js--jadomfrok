@@ -13,3 +13,9 @@ function timesFive(p){
  return p*5;
 }
 timesFive(3); =========> returns 15
+
+
+-==============
+let firstLetterOfLastName="";
+const lastName="lovelace";
+firstLetterOfLastName = lastName.length;
