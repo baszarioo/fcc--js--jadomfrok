@@ -19,3 +19,5 @@ timesFive(3); =========> returns 15
 let firstLetterOfLastName="";
 const lastName="lovelace";
 firstLetterOfLastName = lastName.length;
+
+Ok thats, all for today. That challenge took a while as you can see, but i think it was pretty fun and also  a great form of spending time. You have to try it! ////ci vediamo presto//// Ti saluto, Ciao!!
