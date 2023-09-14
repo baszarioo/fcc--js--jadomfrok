@@ -41,3 +41,15 @@ myLocalScope();
 
 console.log('outside myLocalScope', myVar);
 
+
+Global vs. Local Scope in Functions:
+-- Add a local variable to myOutfif function to override the value of outerWear with the string sweater.
+//Setup:
+const outerWear = "T-Shirt";
+function myOutfif() {
+	const outerWear="sweater"
+	return outerWear;
+}
+myOutfit();
+
+
